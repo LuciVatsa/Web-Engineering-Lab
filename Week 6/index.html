@@ -1,0 +1,121 @@
+<html>
+    <link rel="stylesheet" type="text/css" href = "style.css">
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        <!--
+        ========================================================
+                                    HEADER
+        ========================================================
+        -->
+        <header>
+            <div style = "margin-left:700px">
+                <h1>Tom Clancy's Rainbow Six Siege</h1>
+            </div>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="#">About</a></li>
+                    <ul>
+                        <li><a href="#">Operation Chimera</a></li>
+                        <li><a href="#">Operation White Noise</a></li>
+                        <li><a href="#">Pro League</li>
+                            <ol>
+                                <li><a href="#">Six Invitational</a></li>
+                                <li><a href="#">LATAM Pro League</a></li>
+                                <li><a href="#">Meet Penta Sports</a></li>
+                            </ol>
+                    </ul>
+                <li><a href="#">Operator Information</a></li>
+                <li><a href="#">Drawing Board</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">BUY</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </header>
+        <!--
+        ========================================================
+                                    CONTENT
+        ========================================================
+        -->
+        <main>
+            <h3>Game Description</h3>
+            <br>
+                    <p>Master the art of destruction and gadgetry in Tom Clancy’s Rainbow Six Siege.<br>
+                     Face intense close quarters combat, high lethality, tactical decision making, team play,<br>
+                     and explosive action within every moment. Available on Xbox One, PS4, and PC..</p>
+            <h3>Play Outbreak</h3>
+            <br>
+                    <p>Outbreak’s three player coop mode will force you to revisit your strategies and push you <br>
+                     to rely on teammates like never before. This limited-time event will be held from March 6th <br>
+                     to April 3rd 2018!</p>
+            <h4>Notable Players</h4>
+            <br>
+            <table style="width:100%">
+                <tr>
+                    <th>Gamer Tag</th>
+                    <th>Kill/Death</th>
+                    <th>Win/Loss</th>
+                    <th>Affiliation</th>
+                </tr>
+                <tr>
+                    <td>MC.jay444</td>
+                    <td>3.2</td>
+                    <td>4.5</td>
+                    <td>Twitch</td>
+                </tr>
+                <tr>
+                    <td>Penta-pengu</td>
+                    <td>4.1</td>
+                    <td>3.9</td>
+                    <td>Penta ESports</td>
+                </tr>
+                <tr>
+                    <td>Dr-Dropshot</td>
+                    <td>3.3</td>
+                    <td>3.2</td>
+                    <td>Youtube</td>
+                </tr>
+            </table>
+            <h4>Contact Us</h4>
+                <br>
+                <form>
+                    <form action="ContactForm.jsp" method="get">
+                    Name:<br>
+                    <input type="text" name="name" value="Name"><br>
+                    Email:<br>
+                    <input type="text" name="email" value="Email"><br><br>
+                    Gender:<br>
+                    <input type="radio" name="gender" value="male" checked> Male<br>
+                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="submit" value="Submit">
+                </form>
+                <script type="text/javascript">
+                function checkForm(form)
+                {
+                    if(form.inputfield.value == "") {
+                        alert("Error: Input is empty!");
+                        form.inputfield.focus();
+                        return false;
+                    }
+                    var re = /^[\w ]+$/;
+                    if(!re.test(form.inputfield.value)) {
+                        alert("Error: Input contains invalid characters!");
+                        form.inputfield.focus();
+                        return false;
+                    }
+                    return true;
+                }
+                </script>
+        </main>
+        <!--
+        ========================================================
+                                    FOOTER
+        ========================================================
+        -->
+        <footer>
+            <br>
+            Designed By Saaransh
+        </footer>
+    </body>
+</html>
